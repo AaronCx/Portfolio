@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aaron — CS Capstone Portfolio</title>
+  <title>Aaron — Software Engineer Portfolio</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -11,35 +11,77 @@
     <div class="nav">
       <div><a href="index.html"><strong>Aaron</strong></a></div>
       <div class="links">
-        <a href="self-assessment.html">Professional Self-Assessment</a>
+        <a href="self-assessment.html">About</a>
         <a href="projects/travlr.html">Travlr</a>
         <a href="projects/treasuremaze.html">TreasureMaze</a>
       </div>
     </div>
 
     <section class="hero">
-      <h1>Computer Science Capstone Portfolio</h1>
+      <h1>Aaron Character — Software Engineer</h1>
       <p>
-        I’m a computer science graduate focused on full-stack development, databases, and applied AI.
-        This site highlights my capstone artifacts and the improvements I made to demonstrate industry-ready skills.
+        Full-stack engineer with experience building production-ready systems across Java, Python, and TypeScript.
+        I focus on clean architecture, reliable APIs, and developer-friendly tooling.
       </p>
       <div class="badges">
-        <span class="badge">JavaScript / Node / Express</span>
-        <span class="badge">Angular</span>
-        <span class="badge">MongoDB</span>
-        <span class="badge">Python</span>
-        <span class="badge">AI / Reinforcement Learning</span>
+        <span class="badge">Java / Spring Boot</span>
+        <span class="badge">Python / FastAPI</span>
+        <span class="badge">React / TypeScript</span>
+        <span class="badge">Next.js / Node</span>
+        <span class="badge">Docker / Kafka</span>
+        <span class="badge">PostgreSQL / Supabase</span>
       </div>
     </section>
 
-    <h2>Featured Projects</h2>
+    <h2>Projects</h2>
     <div class="grid">
+
       <div class="card">
-        <h3>Travlr Getaways (Full-Stack Web App)</h3>
-        <div class="meta">Angular • Express • MongoDB • RBAC/Auth</div>
+        <h3>TaskFlow — Full-Stack Task Manager</h3>
+        <div class="meta">Java 17 · Spring Boot 3 · React · TypeScript · Kafka · PostgreSQL · Docker</div>
         <p>
-          A travel booking/admin platform with a structured API + database-backed trip data.
-          Includes security and usability improvements made during capstone enhancements.
+          Production-ready task management application with a Spring Boot REST API, React/TypeScript frontend,
+          Apache Kafka event pipeline, and a dedicated notification microservice. Includes JWT auth,
+          Swagger UI, GitHub Actions CI, and Docker Compose for one-command local startup.
+        </p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/AaronCx/task-manager" target="_blank" rel="noreferrer">GitHub repo</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>NexaBase — AI SaaS Starter</h3>
+        <div class="meta">Next.js 14 · FastAPI · LangChain · OpenAI · Supabase · Stripe</div>
+        <p>
+          Full-stack SaaS template with GPT-4o mini chat (streaming SSE), Stripe subscription billing,
+          per-user monthly usage quotas, Supabase Auth with JWT route protection,
+          and an error-logging middleware. Deployable via Docker Compose or Vercel + Railway.
+        </p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/AaronCx/NexaBase" target="_blank" rel="noreferrer">GitHub repo</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>LogLens — Error Logging Dashboard</h3>
+        <div class="meta">FastAPI · Next.js · Supabase · Python SDK</div>
+        <p>
+          Real-time error logging dashboard and ingest API. Applications send error payloads
+          to the FastAPI backend; the Next.js frontend surfaces them in a live dashboard backed by Supabase.
+          Ships with a Python SDK for drop-in integration.
+        </p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/AaronCx/loglens" target="_blank" rel="noreferrer">GitHub repo</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Travlr Getaways — Full-Stack Web App</h3>
+        <div class="meta">Angular · Express · MongoDB · RBAC / Auth</div>
+        <p>
+          Travel booking and admin platform built with a structured REST API and a MongoDB-backed
+          data layer. Features role-based access control, a secured admin SPA, and a
+          customer-facing site served by Express.
         </p>
         <div class="actions">
           <a class="btn" href="projects/travlr.html">Project page</a>
@@ -48,29 +90,18 @@
       </div>
 
       <div class="card">
-        <h3>TreasureMaze (AI / Reinforcement Learning)</h3>
-        <div class="meta">Python • Q-Learning / DQN Concepts • Evaluation</div>
+        <h3>TreasureMaze — AI Reinforcement Learning</h3>
+        <div class="meta">Python · Q-Learning / DQN · Evaluation</div>
         <p>
-          An AI agent that learns to navigate a maze environment using reinforcement learning techniques,
-          with results shown through runs, screenshots, and performance notes.
+          An AI agent trained to navigate a maze environment using reinforcement learning.
+          Documents the training process, reward shaping, and performance evaluation
+          across multiple episodes.
         </p>
         <div class="actions">
           <a class="btn" href="projects/treasuremaze.html">Project page</a>
-          <a class="btn" href="https://github.com/YOURUSER/YOUR_TREASUREMAZE_REPO" target="_blank" rel="noreferrer">GitHub repo</a>
         </div>
       </div>
 
-      <div class="card">
-        <h3>Professional Self-Assessment</h3>
-        <div class="meta">Skills • Outcomes • Reflection</div>
-        <p>
-          A summary of the technical and professional growth demonstrated across my capstone artifacts,
-          including software engineering, databases, and AI problem-solving.
-        </p>
-        <div class="actions">
-          <a class="btn" href="self-assessment.html">Read assessment</a>
-        </div>
-      </div>
     </div>
 
     <div class="hr"></div>
