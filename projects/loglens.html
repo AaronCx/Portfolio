@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Travlr Getaways - Project</title>
+  <title>LogLens - Project</title>
   <script>if(localStorage.getItem('portfolio-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,9 +34,9 @@
       <div class="nav-section-label">Projects</div>
       <a href="taskflow.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>TaskFlow</a>
       <a href="nexabase.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>NexaBase</a>
-      <a href="loglens.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>LogLens</a>
+      <a href="loglens.html" class="nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>LogLens</a>
       <a href="algoquest.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><circle cx="16" cy="10.5" r="1"/><circle cx="18" cy="13.5" r="1"/></svg>AlgoQuest</a>
-      <a href="travlr.html" class="nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Travlr</a>
+      <a href="travlr.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Travlr</a>
       <a href="treasuremaze.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5c0 5-5 9-5 9S7 12 7 7a5 5 0 0 1 5-5z"/><circle cx="12" cy="7" r="2"/></svg>TreasureMaze</a>
       <a href="chatbot.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>ChatBot</a>
       <a href="sportstat.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>SportStat</a>
@@ -51,30 +51,37 @@
   <main class="main">
     <div class="page">
       <section class="hero fade-in">
-        <div class="hero-eyebrow">Full-Stack &middot; Web App</div>
-        <h1>Travlr Getaways</h1>
-        <p>Full-stack travel booking and admin management platform with a structured REST API, MongoDB-backed data, and role-based access control.</p>
+        <div class="hero-eyebrow">Monitoring &middot; Real-Time</div>
+        <h1>LogLens</h1>
+        <p>Real-time error logging and monitoring platform with a live dashboard, Python SDK, and SSE-powered instant updates.</p>
         <div class="badges">
-          <span class="badge">Angular</span>
-          <span class="badge">Node / Express</span>
-          <span class="badge">MongoDB</span>
-          <span class="badge">RBAC / Auth</span>
+          <span class="badge">FastAPI</span>
+          <span class="badge">Next.js</span>
+          <span class="badge">PostgreSQL</span>
+          <span class="badge">SSE</span>
+          <span class="badge">Python SDK</span>
         </div>
       </section>
 
       <div class="content-card fade-in">
         <h2>Overview</h2>
-        <p>Travlr Getaways provides a user-facing experience for browsing trips and an admin experience for managing trip data. The system uses an API layer to connect the UI to MongoDB-backed data.</p>
+        <p>LogLens is a developer-focused error logging and monitoring platform. It provides a clean ingest API, a real-time dashboard with Server-Sent Events, and a Python SDK for one-line integration into any application.</p>
 
-        <h2>Capstone Enhancements</h2>
+        <h2>Key Features</h2>
         <ul>
-          <li>Improved security/auth workflow with role-based access control for admin actions</li>
-          <li>Cleaned up data flow between UI, API, and database to reduce errors and improve reliability</li>
-          <li>Strengthened maintainability with clearer structure and better separation of concerns</li>
+          <li>Live dashboard with SSE-powered instant error updates — no polling</li>
+          <li>Severity filtering (info, warning, error, critical) with color-coded indicators</li>
+          <li>Full-text search across log messages and stack traces</li>
+          <li>Time-series charts for error trend visualization</li>
+          <li>Python SDK for one-line integration into existing applications</li>
+          <li>RESTful ingest API with API key authentication</li>
         </ul>
 
+        <h2>Architecture</h2>
+        <p>The backend is built with FastAPI and PostgreSQL for high-throughput log ingestion. The frontend uses Next.js with SSE connections for real-time updates. The Python SDK wraps the ingest API for seamless integration.</p>
+
         <div class="actions">
-          <a class="btn btn-primary" href="https://github.com/AaronCx/CS-465-Full-Stack-" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+          <a class="btn btn-primary" href="https://github.com/AaronCx/loglens" target="_blank" rel="noreferrer">View on GitHub ↗</a>
           <a class="btn" href="../index.html">Back to Home</a>
         </div>
       </div>
