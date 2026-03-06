@@ -3,11 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aaron Character — Developer Portfolio</title>
+  <title>Aaron Character - Developer Portfolio</title>
   <script>if(localStorage.getItem('portfolio-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+
+<!-- Mobile Header -->
+<div class="mobile-header">
+  <a href="index.html" class="mobile-logo">
+    <div class="mobile-logo-icon">A</div>
+    Aaron Character
+  </a>
+  <button class="hamburger" onclick="openMenu()" aria-label="Open menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</div>
+<div class="sidebar-overlay" onclick="closeMenu()"></div>
+
 <div class="layout">
   <nav class="sidebar">
     <div class="sidebar-header">
@@ -19,8 +35,8 @@
         </div>
       </a>
       <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-        <svg id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        <svg id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
     </div>
     <div class="sidebar-nav">
@@ -33,7 +49,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         About
       </a>
-      <div class="nav-section-label" style="margin-top:14px">Projects</div>
+      <div class="nav-section-label">Projects</div>
       <a href="projects/taskflow.html" class="nav-link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
         TaskFlow
@@ -58,19 +74,28 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5c0 5-5 9-5 9S7 12 7 7a5 5 0 0 1 5-5z"/><circle cx="12" cy="7" r="2"/></svg>
         TreasureMaze
       </a>
+      <a href="projects/chatbot.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        ChatBot
+      </a>
+      <a href="projects/sportstat.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        SportStat
+      </a>
     </div>
     <div class="sidebar-footer">
       <a href="mailto:acharacterc@gmail.com">acharacterc@gmail.com</a><br />
+      <a href="https://github.com/AaronCx" target="_blank" rel="noreferrer">GitHub ↗</a> &middot;
       <a href="https://www.linkedin.com/in/aaron-character-13236227b/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
     </div>
   </nav>
 
   <main class="main">
     <div class="page">
-      <section class="hero">
+      <section class="hero fade-in">
         <div class="hero-eyebrow">Software Developer</div>
         <h1>Full-stack apps, real-time systems &amp; AI tools</h1>
-        <p>Full-stack engineer building production-ready systems across Java, Python, and TypeScript — from event-driven microservices and REST APIs to real-time dashboards and AI-powered SaaS products. I care about clean architecture, readable code, and shipping software that actually works.</p>
+        <p>Full-stack engineer building production-ready systems across Java, Python, and TypeScript — from event-driven microservices and REST APIs to real-time dashboards and AI-powered SaaS products.</p>
         <div class="badges">
           <span class="badge">Java / Spring Boot</span>
           <span class="badge">Python / FastAPI</span>
@@ -81,78 +106,107 @@
         </div>
       </section>
 
-      <div class="section-label">Projects</div>
+      <div class="section-label">Featured Projects</div>
       <div class="grid">
 
-        <div class="card">
-          <div class="card-eyebrow">Full-Stack · Microservices</div>
+        <div class="card fade-in">
+          <div class="card-eyebrow">Full-Stack &middot; Microservices</div>
           <h3>TaskFlow</h3>
-          <div class="meta">Java 17 · Spring Boot 3 · React · Kafka · PostgreSQL · Docker</div>
-          <p>Production-ready task manager with a Spring Boot REST API, React/TypeScript frontend, Apache Kafka event pipeline, and a notification microservice. Includes JWT auth, Swagger UI, GitHub Actions CI, and Docker Compose for one-command startup.</p>
+          <div class="meta">Java 17 &middot; Spring Boot 3 &middot; React &middot; Kafka &middot; PostgreSQL</div>
+          <p>Production-ready task manager with Spring Boot REST API, React/TS frontend, Kafka event pipeline, and notification microservice. JWT auth, Swagger UI, Docker Compose.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="projects/taskflow.html">Project page</a>
+            <a class="btn btn-primary" href="projects/taskflow.html">View project</a>
             <a class="btn" href="https://github.com/AaronCx/task-manager" target="_blank" rel="noreferrer">GitHub ↗</a>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-eyebrow">AI SaaS · Full-Stack</div>
+        <div class="card fade-in">
+          <div class="card-eyebrow">AI SaaS &middot; Full-Stack</div>
           <h3>NexaBase</h3>
-          <div class="meta">Next.js 14 · FastAPI · LangChain · OpenAI · Supabase · Stripe</div>
-          <p>Full-stack SaaS starter with GPT-4o mini streaming chat, Stripe subscription billing, per-user monthly usage quotas, Supabase Auth with JWT route protection, and error-logging middleware. Deployable via Docker Compose or Vercel + Railway.</p>
+          <div class="meta">Next.js 14 &middot; FastAPI &middot; LangChain &middot; OpenAI &middot; Stripe</div>
+          <p>Full-stack SaaS starter with GPT-4o mini streaming chat, Stripe billing, per-user usage quotas, Supabase Auth with JWT protection, and error-logging middleware.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="projects/nexabase.html">Project page</a>
+            <a class="btn btn-primary" href="projects/nexabase.html">View project</a>
             <a class="btn" href="https://github.com/AaronCx/NexaBase" target="_blank" rel="noreferrer">GitHub ↗</a>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-eyebrow">Monitoring · Real-Time</div>
+        <div class="card fade-in">
+          <div class="card-eyebrow">Monitoring &middot; Real-Time</div>
           <h3>LogLens</h3>
-          <div class="meta">FastAPI · Next.js · PostgreSQL · SSE · Python SDK</div>
-          <p>Real-time error logging and monitoring platform. Live dashboard with SSE-powered instant updates, severity filtering, full-text search, time-series charts, and a Python SDK for one-line integration.</p>
+          <div class="meta">FastAPI &middot; Next.js &middot; PostgreSQL &middot; SSE &middot; Python SDK</div>
+          <p>Real-time error logging platform with live SSE-powered dashboard, severity filtering, full-text search, time-series charts, and a Python SDK for one-line integration.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="projects/loglens.html">Project page</a>
+            <a class="btn btn-primary" href="projects/loglens.html">View project</a>
             <a class="btn" href="https://github.com/AaronCx/loglens" target="_blank" rel="noreferrer">GitHub ↗</a>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-eyebrow">Game · Education</div>
+        <div class="card fade-in">
+          <div class="card-eyebrow">Game &middot; Education</div>
           <h3>AlgoQuest</h3>
-          <div class="meta">React 19 · Vite · Tailwind · Framer Motion</div>
-          <p>Browser-based algorithm learning game with a pixel art RPG aesthetic. Three interactive levels — Bubble Sort, Binary Search, BFS — with XP, star ratings, and a typewriter dialog system.</p>
+          <div class="meta">React 19 &middot; Vite &middot; Tailwind &middot; Framer Motion</div>
+          <p>Browser-based algorithm learning game with pixel art RPG aesthetic. Three interactive levels — Bubble Sort, Binary Search, BFS — with XP, star ratings, and dialog system.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="projects/algoquest.html">Project page</a>
+            <a class="btn btn-primary" href="projects/algoquest.html">View project</a>
             <a class="btn" href="https://github.com/AaronCx/algoquest" target="_blank" rel="noreferrer">GitHub ↗</a>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-eyebrow">Full-Stack · Web App</div>
+        <div class="card fade-in">
+          <div class="card-eyebrow">Full-Stack &middot; Web App</div>
           <h3>Travlr Getaways</h3>
-          <div class="meta">Angular · Express · MongoDB · RBAC / Auth</div>
-          <p>Travel booking and admin management platform with a structured REST API, MongoDB-backed trip data, and role-based access control for secure admin operations.</p>
+          <div class="meta">Angular &middot; Express &middot; MongoDB &middot; RBAC</div>
+          <p>Travel booking and admin platform with structured REST API, MongoDB-backed trip data, and role-based access control for secure admin operations.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="projects/travlr.html">Project page</a>
+            <a class="btn btn-primary" href="projects/travlr.html">View project</a>
             <a class="btn" href="https://github.com/AaronCx/CS-465-Full-Stack-" target="_blank" rel="noreferrer">GitHub ↗</a>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-eyebrow">AI · Reinforcement Learning</div>
+        <div class="card fade-in">
+          <div class="card-eyebrow">AI &middot; Reinforcement Learning</div>
           <h3>TreasureMaze</h3>
-          <div class="meta">Python · Q-Learning · Evaluation</div>
-          <p>An RL agent trained to navigate a maze environment purely through reward feedback. Demonstrates epsilon-greedy exploration with performance tracked across training episodes.</p>
+          <div class="meta">Python &middot; Q-Learning &middot; Evaluation</div>
+          <p>RL agent trained to navigate a maze environment through reward feedback. Demonstrates epsilon-greedy exploration with performance tracked across training episodes.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="projects/treasuremaze.html">Project page</a>
+            <a class="btn btn-primary" href="projects/treasuremaze.html">View project</a>
+          </div>
+        </div>
+
+        <div class="card fade-in">
+          <div class="card-eyebrow">AI &middot; Conversational</div>
+          <h3>ChatBot</h3>
+          <div class="meta">TypeScript &middot; AI Integration</div>
+          <p>AI-powered chatbot application built with TypeScript, featuring conversational AI capabilities and a clean, interactive user interface.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="projects/chatbot.html">View project</a>
+            <a class="btn" href="https://github.com/AaronCx/ChatBot" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="card fade-in">
+          <div class="card-eyebrow">Frontend &middot; Data Viz</div>
+          <h3>SportStat</h3>
+          <div class="meta">JavaScript &middot; Data Visualization</div>
+          <p>Sports statistics dashboard for viewing and analyzing player and team data with interactive visualizations and real-time stat tracking.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="projects/sportstat.html">View project</a>
+            <a class="btn" href="https://github.com/AaronCx/sport-stat-page" target="_blank" rel="noreferrer">GitHub ↗</a>
           </div>
         </div>
 
       </div>
+
+      <div class="section-label">GitHub Activity</div>
+      <div id="github-repos" class="github-grid">
+        <p style="color:var(--subtle);font-size:13px;">Loading repositories...</p>
+      </div>
+
     </div>
   </main>
 </div>
 <script src="assets/main.js"></script>
+<script>loadGitHubRepos('AaronCx', 'github-repos');</script>
 </body>
 </html>
