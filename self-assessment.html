@@ -3,53 +3,95 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Professional Self-Assessment</title>
+  <title>About — Aaron Character</title>
+  <script>if(localStorage.getItem('portfolio-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="nav">
-      <div><a href="index.html"><strong>← Home</strong></a></div>
-      <div class="links">
-        <a href="projects/travlr.html">Travlr</a>
-        <a href="projects/treasuremaze.html">TreasureMaze</a>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="index.html" class="sidebar-logo">
+        <div class="sidebar-logo-icon">A</div>
+        <div>
+          <div class="sidebar-logo-name">Aaron Character</div>
+          <div class="sidebar-logo-sub">Software Developer</div>
+        </div>
+      </a>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <svg id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+    <div class="sidebar-nav">
+      <div class="nav-section-label">Navigation</div>
+      <a href="index.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Home
+      </a>
+      <a href="self-assessment.html" class="nav-link active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        About
+      </a>
+      <div class="nav-section-label" style="margin-top:14px">Projects</div>
+      <a href="projects/taskflow.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        TaskFlow
+      </a>
+      <a href="projects/nexabase.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        NexaBase
+      </a>
+      <a href="projects/loglens.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        LogLens
+      </a>
+      <a href="projects/algoquest.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><circle cx="16" cy="10.5" r="1"/><circle cx="18" cy="13.5" r="1"/></svg>
+        AlgoQuest
+      </a>
+      <a href="projects/travlr.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Travlr
+      </a>
+      <a href="projects/treasuremaze.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5c0 5-5 9-5 9S7 12 7 7a5 5 0 0 1 5-5z"/><circle cx="12" cy="7" r="2"/></svg>
+        TreasureMaze
+      </a>
+    </div>
+    <div class="sidebar-footer">
+      <a href="mailto:acharacterc@gmail.com">acharacterc@gmail.com</a><br />
+      <a href="https://www.linkedin.com/in/aaron-character-13236227b/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="page">
+      <section class="hero">
+        <div class="hero-eyebrow">About Me</div>
+        <h1>Software developer with a CS background</h1>
+        <p>I build production-ready systems across full-stack development, distributed systems, and applied AI. I focus on clean architecture, reliable APIs, and developer-friendly tooling.</p>
+      </section>
+
+      <div class="content-card">
+        <h2>What I work with</h2>
+        <ul>
+          <li><strong>Backend:</strong> Java / Spring Boot, Python / FastAPI, Node.js / Express, REST APIs, Apache Kafka</li>
+          <li><strong>Frontend:</strong> React, Angular, Next.js, TypeScript, Tailwind CSS</li>
+          <li><strong>Data:</strong> PostgreSQL, MongoDB, Supabase — schema design, JPA/Hibernate, RLS, CRUD workflows</li>
+          <li><strong>Infrastructure:</strong> Docker, Docker Compose, GitHub Actions CI, Railway, Vercel, Render</li>
+          <li><strong>AI / ML:</strong> LangChain, OpenAI API (streaming SSE), reinforcement learning, agent workflows</li>
+        </ul>
+
+        <h2>Projects</h2>
+        <p>TaskFlow demonstrates end-to-end backend engineering — REST API design, JWT security, Kafka event pipelines, and containerized deployment. NexaBase shows product thinking: combining auth, billing, and AI into a deployable SaaS template. LogLens addresses a real developer need with a clean ingest API and SDK. AlgoQuest, Travlr, and TreasureMaze round out the picture with frontend-heavy work, full-stack data flow, and applied AI reasoning.</p>
+
+        <h2>What I care about</h2>
+        <p>I want the things I build to be easy to understand, easy to run, and easy to trust — solid documentation, repeatable setup, simple architecture, and security as a default rather than an afterthought.</p>
       </div>
     </div>
-
-    <section class="hero">
-      <h1>Professional Self-Assessment</h1>
-      <p>
-        This portfolio reflects my growth as a software engineer across full-stack development,
-        distributed systems, and applied AI. I focus on building systems that work end-to-end:
-        clear requirements, readable code, secure access, reliable data, and evidence that the solution performs.
-      </p>
-    </section>
-
-    <div class="card">
-      <h2>Strengths demonstrated</h2>
-      <ul>
-        <li><strong>Software engineering:</strong> designing maintainable features, separating concerns, and improving readability across Java, Python, and TypeScript codebases.</li>
-        <li><strong>Distributed systems:</strong> building event-driven microservices with Apache Kafka, Docker Compose orchestration, and multi-service CI pipelines.</li>
-        <li><strong>Databases:</strong> working with PostgreSQL, MongoDB, and Supabase — schema design, JPA/Hibernate, RLS policies, and API-driven CRUD workflows.</li>
-        <li><strong>AI integration:</strong> connecting LLM APIs (OpenAI via LangChain) with streaming responses, usage tracking, and reinforcement learning concepts.</li>
-        <li><strong>Professional practice:</strong> documenting architecture, writing unit and integration tests, automating CI with GitHub Actions, and shipping with Docker.</li>
-      </ul>
-
-      <h2>How my projects support career readiness</h2>
-      <p>
-        TaskFlow demonstrates end-to-end backend engineering — REST API design, JWT security, Kafka event pipelines,
-        and containerized deployment. NexaBase shows product thinking: combining auth, billing, and AI into a deployable
-        SaaS template. LogLens addresses a real developer need with a clean ingest API and SDK. Travlr and TreasureMaze
-        round out the picture with data-driven full-stack work and applied AI reasoning.
-      </p>
-
-      <h2>What I'm taking forward</h2>
-      <p>
-        I want to keep building projects that are easy to understand, easy to run, and easy to trust —
-        with solid documentation, repeatable setup, simple architecture, and security as a default
-        rather than an afterthought.
-      </p>
-    </div>
-  </div>
+  </main>
+</div>
+<script src="assets/main.js"></script>
 </body>
 </html>

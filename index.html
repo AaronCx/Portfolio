@@ -3,112 +3,156 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aaron — Software Engineer Portfolio</title>
+  <title>Aaron Character — Developer Portfolio</title>
+  <script>if(localStorage.getItem('portfolio-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="nav">
-      <div><a href="index.html"><strong>Aaron</strong></a></div>
-      <div class="links">
-        <a href="self-assessment.html">About</a>
-        <a href="projects/travlr.html">Travlr</a>
-        <a href="projects/treasuremaze.html">TreasureMaze</a>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="index.html" class="sidebar-logo">
+        <div class="sidebar-logo-icon">A</div>
+        <div>
+          <div class="sidebar-logo-name">Aaron Character</div>
+          <div class="sidebar-logo-sub">Software Developer</div>
+        </div>
+      </a>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <svg id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+    <div class="sidebar-nav">
+      <div class="nav-section-label">Navigation</div>
+      <a href="index.html" class="nav-link active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Home
+      </a>
+      <a href="self-assessment.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        About
+      </a>
+      <div class="nav-section-label" style="margin-top:14px">Projects</div>
+      <a href="projects/taskflow.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        TaskFlow
+      </a>
+      <a href="projects/nexabase.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        NexaBase
+      </a>
+      <a href="projects/loglens.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        LogLens
+      </a>
+      <a href="projects/algoquest.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><circle cx="16" cy="10.5" r="1"/><circle cx="18" cy="13.5" r="1"/></svg>
+        AlgoQuest
+      </a>
+      <a href="projects/travlr.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Travlr
+      </a>
+      <a href="projects/treasuremaze.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5c0 5-5 9-5 9S7 12 7 7a5 5 0 0 1 5-5z"/><circle cx="12" cy="7" r="2"/></svg>
+        TreasureMaze
+      </a>
+    </div>
+    <div class="sidebar-footer">
+      <a href="mailto:acharacterc@gmail.com">acharacterc@gmail.com</a><br />
+      <a href="https://www.linkedin.com/in/aaron-character-13236227b/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="page">
+      <section class="hero">
+        <div class="hero-eyebrow">Software Developer</div>
+        <h1>Full-stack apps, real-time systems &amp; AI tools</h1>
+        <p>Full-stack engineer building production-ready systems across Java, Python, and TypeScript — from event-driven microservices and REST APIs to real-time dashboards and AI-powered SaaS products. I care about clean architecture, readable code, and shipping software that actually works.</p>
+        <div class="badges">
+          <span class="badge">Java / Spring Boot</span>
+          <span class="badge">Python / FastAPI</span>
+          <span class="badge">React / TypeScript</span>
+          <span class="badge">Next.js / Node</span>
+          <span class="badge">Docker / Kafka</span>
+          <span class="badge">PostgreSQL / MongoDB</span>
+        </div>
+      </section>
+
+      <div class="section-label">Projects</div>
+      <div class="grid">
+
+        <div class="card">
+          <div class="card-eyebrow">Full-Stack · Microservices</div>
+          <h3>TaskFlow</h3>
+          <div class="meta">Java 17 · Spring Boot 3 · React · Kafka · PostgreSQL · Docker</div>
+          <p>Production-ready task manager with a Spring Boot REST API, React/TypeScript frontend, Apache Kafka event pipeline, and a notification microservice. Includes JWT auth, Swagger UI, GitHub Actions CI, and Docker Compose for one-command startup.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="projects/taskflow.html">Project page</a>
+            <a class="btn" href="https://github.com/AaronCx/task-manager" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-eyebrow">AI SaaS · Full-Stack</div>
+          <h3>NexaBase</h3>
+          <div class="meta">Next.js 14 · FastAPI · LangChain · OpenAI · Supabase · Stripe</div>
+          <p>Full-stack SaaS starter with GPT-4o mini streaming chat, Stripe subscription billing, per-user monthly usage quotas, Supabase Auth with JWT route protection, and error-logging middleware. Deployable via Docker Compose or Vercel + Railway.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="projects/nexabase.html">Project page</a>
+            <a class="btn" href="https://github.com/AaronCx/NexaBase" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-eyebrow">Monitoring · Real-Time</div>
+          <h3>LogLens</h3>
+          <div class="meta">FastAPI · Next.js · PostgreSQL · SSE · Python SDK</div>
+          <p>Real-time error logging and monitoring platform. Live dashboard with SSE-powered instant updates, severity filtering, full-text search, time-series charts, and a Python SDK for one-line integration.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="projects/loglens.html">Project page</a>
+            <a class="btn" href="https://github.com/AaronCx/loglens" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-eyebrow">Game · Education</div>
+          <h3>AlgoQuest</h3>
+          <div class="meta">React 19 · Vite · Tailwind · Framer Motion</div>
+          <p>Browser-based algorithm learning game with a pixel art RPG aesthetic. Three interactive levels — Bubble Sort, Binary Search, BFS — with XP, star ratings, and a typewriter dialog system.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="projects/algoquest.html">Project page</a>
+            <a class="btn" href="https://github.com/AaronCx/algoquest" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-eyebrow">Full-Stack · Web App</div>
+          <h3>Travlr Getaways</h3>
+          <div class="meta">Angular · Express · MongoDB · RBAC / Auth</div>
+          <p>Travel booking and admin management platform with a structured REST API, MongoDB-backed trip data, and role-based access control for secure admin operations.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="projects/travlr.html">Project page</a>
+            <a class="btn" href="https://github.com/AaronCx/CS-465-Full-Stack-" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-eyebrow">AI · Reinforcement Learning</div>
+          <h3>TreasureMaze</h3>
+          <div class="meta">Python · Q-Learning · Evaluation</div>
+          <p>An RL agent trained to navigate a maze environment purely through reward feedback. Demonstrates epsilon-greedy exploration with performance tracked across training episodes.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="projects/treasuremaze.html">Project page</a>
+          </div>
+        </div>
+
       </div>
     </div>
-
-    <section class="hero">
-      <h1>Aaron Character — Software Engineer</h1>
-      <p>
-        Full-stack engineer with experience building production-ready systems across Java, Python, and TypeScript.
-        I focus on clean architecture, reliable APIs, and developer-friendly tooling.
-      </p>
-      <div class="badges">
-        <span class="badge">Java / Spring Boot</span>
-        <span class="badge">Python / FastAPI</span>
-        <span class="badge">React / TypeScript</span>
-        <span class="badge">Next.js / Node</span>
-        <span class="badge">Docker / Kafka</span>
-        <span class="badge">PostgreSQL / Supabase</span>
-      </div>
-    </section>
-
-    <h2>Projects</h2>
-    <div class="grid">
-
-      <div class="card">
-        <h3>TaskFlow — Full-Stack Task Manager</h3>
-        <div class="meta">Java 17 · Spring Boot 3 · React · TypeScript · Kafka · PostgreSQL · Docker</div>
-        <p>
-          Production-ready task management application with a Spring Boot REST API, React/TypeScript frontend,
-          Apache Kafka event pipeline, and a dedicated notification microservice. Includes JWT auth,
-          Swagger UI, GitHub Actions CI, and Docker Compose for one-command local startup.
-        </p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/AaronCx/task-manager" target="_blank" rel="noreferrer">GitHub repo</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>NexaBase — AI SaaS Starter</h3>
-        <div class="meta">Next.js 14 · FastAPI · LangChain · OpenAI · Supabase · Stripe</div>
-        <p>
-          Full-stack SaaS template with GPT-4o mini chat (streaming SSE), Stripe subscription billing,
-          per-user monthly usage quotas, Supabase Auth with JWT route protection,
-          and an error-logging middleware. Deployable via Docker Compose or Vercel + Railway.
-        </p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/AaronCx/NexaBase" target="_blank" rel="noreferrer">GitHub repo</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>LogLens — Error Logging Dashboard</h3>
-        <div class="meta">FastAPI · Next.js · Supabase · Python SDK</div>
-        <p>
-          Real-time error logging dashboard and ingest API. Applications send error payloads
-          to the FastAPI backend; the Next.js frontend surfaces them in a live dashboard backed by Supabase.
-          Ships with a Python SDK for drop-in integration.
-        </p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/AaronCx/loglens" target="_blank" rel="noreferrer">GitHub repo</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Travlr Getaways — Full-Stack Web App</h3>
-        <div class="meta">Angular · Express · MongoDB · RBAC / Auth</div>
-        <p>
-          Travel booking and admin platform built with a structured REST API and a MongoDB-backed
-          data layer. Features role-based access control, a secured admin SPA, and a
-          customer-facing site served by Express.
-        </p>
-        <div class="actions">
-          <a class="btn" href="projects/travlr.html">Project page</a>
-          <a class="btn" href="https://github.com/AaronCx/CS-465-Full-Stack-" target="_blank" rel="noreferrer">GitHub repo</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>TreasureMaze — AI Reinforcement Learning</h3>
-        <div class="meta">Python · Q-Learning / DQN · Evaluation</div>
-        <p>
-          An AI agent trained to navigate a maze environment using reinforcement learning.
-          Documents the training process, reward shaping, and performance evaluation
-          across multiple episodes.
-        </p>
-        <div class="actions">
-          <a class="btn" href="projects/treasuremaze.html">Project page</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="hr"></div>
-    <div class="footer">
-      Contact: <a href="mailto:acharacterc@gmail.com">acharacterc@gmail.com</a> •
-      <a href="https://www.linkedin.com/in/aaron-character-13236227b/" target="_blank" rel="noreferrer">LinkedIn</a>
-    </div>
-  </div>
+  </main>
+</div>
+<script src="assets/main.js"></script>
 </body>
 </html>
