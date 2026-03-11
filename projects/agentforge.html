@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AgentForge - Project</title>
+  <script>if(localStorage.getItem('portfolio-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+
+<div class="mobile-header">
+  <a href="../index.html" class="mobile-logo"><div class="mobile-logo-icon">A</div>Aaron Character</a>
+  <button class="hamburger" onclick="openMenu()" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+</div>
+<div class="sidebar-overlay" onclick="closeMenu()"></div>
+
+<div class="layout">
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="sidebar-logo"><div class="sidebar-logo-icon">A</div><div><div class="sidebar-logo-name">Aaron Character</div><div class="sidebar-logo-sub">Full-Stack AI Engineer</div></div></a>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+    <div class="sidebar-nav">
+      <div class="nav-section-label">Navigation</div>
+      <a href="../index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</a>
+      <a href="../self-assessment.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>About</a>
+      <div class="nav-section-label">Projects</div>
+      <a href="agentforge.html" class="nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>AgentForge</a>
+      <a href="nexabase.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>NexaBase</a>
+      <a href="taskflow.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>TaskFlow</a>
+      <a href="loglens.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>LogLens</a>
+      <a href="commitcraft.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>CommitCraft</a>
+      <a href="chatbot.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>ChatBot</a>
+      <a href="algoquest.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><circle cx="16" cy="10.5" r="1"/><circle cx="18" cy="13.5" r="1"/></svg>AlgoQuest</a>
+      <a href="reporadar.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>RepoRadar</a>
+    </div>
+    <div class="sidebar-footer">
+      <a href="mailto:acharacterc@gmail.com">acharacterc@gmail.com</a><br />
+      <a href="https://github.com/AaronCx" target="_blank" rel="noreferrer">GitHub ↗</a> &middot;
+      <a href="https://www.linkedin.com/in/aaron-character-13236227b/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="page">
+      <section class="hero fade-in">
+        <div class="hero-eyebrow">AI Agents &middot; Full-Stack &middot; LLM Orchestration</div>
+        <h1>AgentForge</h1>
+        <p>AI workflow agent platform for building, configuring, and running multi-step AI agents with tool use through a visual web interface.</p>
+        <div class="badges">
+          <span class="badge">Next.js 14</span>
+          <span class="badge">FastAPI</span>
+          <span class="badge">LangChain</span>
+          <span class="badge">OpenAI</span>
+          <span class="badge">Supabase</span>
+          <span class="badge">Python</span>
+          <span class="badge">TypeScript</span>
+        </div>
+      </section>
+
+      <div class="content-card fade-in">
+        <h2>Overview</h2>
+        <p>AgentForge is an agent orchestration platform — not a chatbot. Users create custom AI agents that chain together multiple LLM calls, use tools (web search, document parsing, code execution, data extraction), and follow multi-step workflows to automate complex business tasks. Each agent streams its execution step-by-step in real-time via SSE.</p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>Agent builder with system prompt, tool selection, and multi-step workflow editor</li>
+          <li>Five integrated tools: web search (SerpAPI), document reader (PDF/DOCX), sandboxed code executor, structured data extractor, and summarizer</li>
+          <li>Real-time SSE streaming with step-by-step execution logs</li>
+          <li>LangChain agent executor with OpenAI tool-calling and accumulated context across steps</li>
+          <li>Four pre-built agent templates: Document Analyzer, Research Agent, Data Extractor, Code Reviewer</li>
+          <li>Dashboard with usage stats, run history, token tracking, and API key generation</li>
+          <li>Supabase Auth (email + GitHub OAuth), rate limiting (10 runs/hour), and row-level security</li>
+          <li>CI/CD with GitHub Actions, Docker support, deployed on Vercel + Render</li>
+        </ul>
+
+        <h2>Architecture</h2>
+        <p>The frontend is a Next.js 14 app with shadcn/ui components, consuming a FastAPI backend that orchestrates agents via LangChain. The agent executor resolves tool names to LangChain tool instances, chains workflow steps with accumulated context, and supports both tool-augmented (OpenAI function calling) and direct LLM execution. Supabase provides auth and PostgreSQL storage with RLS policies. The backend streams execution events via SSE to the frontend runner panel.</p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="https://agentforge-six.vercel.app" target="_blank" rel="noreferrer">Live Demo ↗</a>
+          <a class="btn" href="https://github.com/AaronCx/AgentForge" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+          <a class="btn" href="../index.html">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="../assets/main.js"></script>
+</body>
+</html>
