@@ -57,39 +57,68 @@
   <main class="main">
     <div class="page">
       <section class="hero fade-in">
-        <div class="hero-eyebrow">AI Agents &middot; Full-Stack &middot; LLM Orchestration</div>
+        <div class="hero-eyebrow">AI Agents &middot; Computer Use &middot; Cross-Platform Automation</div>
         <h1>AgentForge</h1>
-        <p>AI workflow agent platform for building, configuring, and running multi-step AI agents with tool use through a visual web interface.</p>
+        <p>Multi-agent AI workflow platform with computer use, cross-platform GUI/terminal automation, and visual blueprint orchestration. 44 node types, multi-model providers, agent-on-agent coordination, and multi-machine dispatch.</p>
         <div class="badges">
           <span class="badge">Next.js 14</span>
           <span class="badge">FastAPI</span>
           <span class="badge">LangChain</span>
           <span class="badge">OpenAI</span>
+          <span class="badge">Anthropic</span>
           <span class="badge">Supabase</span>
-          <span class="badge">Python</span>
+          <span class="badge">Python 3.12</span>
           <span class="badge">TypeScript</span>
-          <span class="badge">Bun</span>
+          <span class="badge">React Flow</span>
         </div>
       </section>
 
       <div class="content-card fade-in">
         <h2>Overview</h2>
-        <p>AgentForge is an agent orchestration platform — not a chatbot. Users create custom AI agents that chain together multiple LLM calls, use tools (web search, document parsing, code execution, data extraction), and follow multi-step workflows to automate complex business tasks. Each agent streams its execution step-by-step in real-time via SSE.</p>
+        <p>AgentForge is an AI agent orchestration platform that goes beyond chatbots. Users build visual DAG workflows (blueprints) combining deterministic code nodes with LLM-powered agent nodes, then execute them with real-time SSE streaming. The platform supports GUI automation, terminal orchestration, multi-model providers, knowledge base RAG, eval frameworks, and cross-platform computer use across macOS, Linux, and Windows.</p>
 
-        <h2>Key Features</h2>
+        <h2>Core Capabilities</h2>
         <ul>
-          <li>Agent builder with system prompt, tool selection, and multi-step workflow editor</li>
-          <li>Five integrated tools: web search (SerpAPI), document reader (PDF/DOCX), sandboxed code executor, structured data extractor, and summarizer</li>
-          <li>Real-time SSE streaming with step-by-step execution logs</li>
-          <li>LangChain agent executor with OpenAI tool-calling and accumulated context across steps</li>
-          <li>Four pre-built agent templates: Document Analyzer, Research Agent, Data Extractor, Code Reviewer</li>
-          <li>Dashboard with usage stats, run history, token tracking, and API key generation</li>
-          <li>Supabase Auth (email + GitHub OAuth), rate limiting (10 runs/hour), and row-level security</li>
-          <li>CI/CD with GitHub Actions, Docker support, deployed on Vercel + Render</li>
+          <li><strong>Visual Blueprint Editor</strong> &mdash; Drag-and-drop DAG builder with 44 node types across 9 categories. Topological execution engine with concurrent layer resolution and context assembly.</li>
+          <li><strong>Computer Use (GUI + Terminal)</strong> &mdash; 12 GUI automation nodes (screenshot, OCR, click, type, hotkey, scroll, drag, focus, find, wait, clipboard, apps) and 6 terminal nodes (session, run, send, logs, poll, fanout). Cross-platform: Steer CLI on macOS, xdotool on Linux, pyautogui on Windows.</li>
+          <li><strong>Agent-on-Agent Orchestration</strong> &mdash; Spawn and control external coding agents (Claude Code, Codex CLI, Gemini CLI, Aider) as workers in tmux sessions. Full lifecycle: spawn, prompt, monitor, wait, capture, stop.</li>
+          <li><strong>Multi-Machine Dispatch</strong> &mdash; Route nodes to different execution targets with capability-based routing. Target registry with health checks and aggregated capabilities.</li>
+          <li><strong>Multi-Model Providers</strong> &mdash; OpenAI, Anthropic, Google APIs with per-node model selection, health monitoring, and model comparison.</li>
+          <li><strong>Knowledge Base + RAG</strong> &mdash; Document collections with chunked upload, semantic search, and knowledge_retrieval blueprint node.</li>
+          <li><strong>Eval Framework</strong> &mdash; 5 grading methods including screenshot_match and ocr_contains for computer use verification.</li>
+          <li><strong>Human-in-the-Loop</strong> &mdash; Approval gate nodes pause execution for human review with approve/reject workflows.</li>
+          <li><strong>Safety &amp; Security</strong> &mdash; App blocklist, command blocklist, rate limiting (30 actions/min), approval gates, and full audit logging for all computer use actions.</li>
+          <li><strong>Observability</strong> &mdash; Distributed traces for all executions, prompt versioning with diff/rollback, cost analytics with per-model breakdowns.</li>
+        </ul>
+
+        <h2>Scale</h2>
+        <ul>
+          <li>44 blueprint node types across 9 categories</li>
+          <li>13 pre-built blueprint templates</li>
+          <li>3 LLM providers (OpenAI, Anthropic, Google)</li>
+          <li>3 platform targets (macOS, Linux, Windows)</li>
+          <li>20+ CLI command groups</li>
+          <li>17 database migrations with RLS</li>
+          <li>515 backend tests + 21 frontend tests</li>
+          <li>20+ API route modules</li>
         </ul>
 
         <h2>Architecture</h2>
-        <p>The frontend is a Next.js 14 app with shadcn/ui components, consuming a FastAPI backend that orchestrates agents via LangChain. The agent executor resolves tool names to LangChain tool instances, chains workflow steps with accumulated context, and supports both tool-augmented (OpenAI function calling) and direct LLM execution. Supabase provides auth and PostgreSQL storage with RLS policies. The backend streams execution events via SSE to the frontend runner panel.</p>
+        <p>Next.js 14 frontend with React Flow blueprint editor, consuming a FastAPI backend. The blueprint engine runs DAGs with topological sorting, concurrent layer execution, and context assembly with token budgets. Computer use nodes dispatch to platform-specific executors (Steer/xdotool/pyautogui for GUI, Drive/tmux/PowerShell for terminals). Multi-machine dispatch routes nodes to registered execution targets. Agent-on-agent orchestration spawns external coding agents in tmux sessions via the Drive layer. Supabase provides auth and PostgreSQL with RLS. Everything streams via SSE.</p>
+
+        <h2>Version History</h2>
+        <ul>
+          <li><strong>v1.9</strong> &mdash; Agent-on-agent orchestration, multi-machine dispatch, screen recording, Linux &amp; Windows computer use, cross-platform unification</li>
+          <li><strong>v1.8</strong> &mdash; Computer use extension (Steer + Drive), safety/security, remote execution, capability detection</li>
+          <li><strong>v1.7</strong> &mdash; Workflow marketplace, team features, organization RBAC</li>
+          <li><strong>v1.6</strong> &mdash; Knowledge base + RAG with semantic search</li>
+          <li><strong>v1.5</strong> &mdash; Observability traces + prompt versioning</li>
+          <li><strong>v1.4</strong> &mdash; Eval framework + human-in-the-loop</li>
+          <li><strong>v1.3</strong> &mdash; MCP integration + event triggers</li>
+          <li><strong>v1.2</strong> &mdash; Multi-model provider system</li>
+          <li><strong>v1.1</strong> &mdash; Blueprint system with visual DAG editor</li>
+          <li><strong>v1.0</strong> &mdash; Production release with demo mode and landing page</li>
+        </ul>
 
         <div class="actions">
           <a class="btn btn-primary" href="https://agentforge-six.vercel.app" target="_blank" rel="noreferrer">Live Demo ↗</a>
