@@ -4,7 +4,7 @@ Personal portfolio website showcasing full-stack engineering projects, tech stac
 
 ## Features
 
-- **Project Showcase** — 12 detailed project pages covering full-stack apps, CLI tools, games, and addons
+- **Project Showcase** — detailed project pages covering full-stack apps, CLI tools, games, and addons
 - **GitHub Activity** — Dynamically loads public repos from the GitHub API with language color coding
 - **Dark / Light Theme** — Toggle with localStorage persistence
 - **Responsive Design** — Sidebar navigation on desktop, hamburger menu on mobile
