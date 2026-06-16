@@ -1,14 +1,14 @@
 # Portfolio
 
-Personal portfolio website showcasing full-stack engineering projects, tech stack, and live GitHub activity.
+A static showcase of my public GitHub projects, with a project page for each and live GitHub activity.
 
 ## Features
 
-- **Project Showcase** — detailed project pages covering full-stack apps, CLI tools, games, and addons
+- **Project Showcase** — a detailed page for each featured project, linking to live demos and source
 - **GitHub Activity** — Dynamically loads public repos from the GitHub API with language color coding
 - **Dark / Light Theme** — Toggle with localStorage persistence
 - **Responsive Design** — Sidebar navigation on desktop, hamburger menu on mobile
-- **Self-Assessment** — Dedicated page covering skills, philosophy, and tech expertise
+- **About** — Short page listing the tech I work with and the featured projects
 
 ## Tech Stack
 
@@ -25,23 +25,18 @@ Personal portfolio website showcasing full-stack engineering projects, tech stac
 ```
 Portfolio/
 ├── index.html              # Home — hero, featured projects, GitHub activity
-├── self-assessment.html    # About — skills, tech stack, philosophy
+├── self-assessment.html    # About — tech stack and featured projects
 ├── assets/
 │   ├── style.css           # Theming, layout, responsive styles
 │   └── main.js             # Theme toggle, mobile menu, GitHub fetch
-└── projects/               # 12 individual project pages
-    ├── taskflow.html
+└── projects/               # individual project pages
+    ├── forge.html
+    ├── lastgate.html
     ├── nexabase.html
-    ├── loglens.html
-    ├── algoquest.html
-    ├── commitcraft.html
-    ├── supaviz.html
-    ├── travlr.html
-    ├── treasuremaze.html
-    ├── chatbot.html
-    ├── sportstat.html
+    ├── anomaly.html
     ├── reporadar.html
-    └── arcanewatch.html
+    ├── taskflow.html
+    └── aterminal.html
 ```
 
 ## Run Locally
