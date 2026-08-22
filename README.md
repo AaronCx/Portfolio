@@ -30,6 +30,7 @@ Portfolio/
 │   ├── style.css           # Theming, layout, responsive styles
 │   └── main.js             # Theme toggle, mobile menu, GitHub fetch
 └── projects/               # individual project pages
+    ├── algoquest.html
     ├── anomaly.html
     ├── aterminal.html
     ├── monad.html
