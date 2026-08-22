@@ -30,13 +30,12 @@ Portfolio/
 │   ├── style.css           # Theming, layout, responsive styles
 │   └── main.js             # Theme toggle, mobile menu, GitHub fetch
 └── projects/               # individual project pages
-    ├── forge.html
-    ├── lastgate.html
-    ├── nexabase.html
     ├── anomaly.html
+    ├── aterminal.html
+    ├── monad.html
+    ├── nexabase.html
     ├── reporadar.html
-    ├── taskflow.html
-    └── aterminal.html
+    └── taskflow.html
 ```
 
 ## Run Locally
