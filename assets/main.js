@@ -58,7 +58,7 @@ function loadGitHubRepos(username, containerId) {
     .then(function(res) { return res.json(); })
     .then(function(repos) {
       var filtered = repos.filter(function(r) {
-        return !r.fork && r.name !== '.github';
+        return !r.fork && !r.archived && r.name !== '.github';
       });
       container.innerHTML = '';
       filtered.forEach(function(repo, i) {
